@@ -1,0 +1,36 @@
+{
+  "name": "webf",
+  "version": "0.1.0",
+  "summary": "A W3C standard compliant Web rendering engine based on Flutter.",
+  "description": "A W3C standard compliant Web rendering engine based on Flutter..",
+  "homepage": "https://openwebf.com",
+  "license": {
+    "file": "../LICENSE"
+  },
+  "authors": {
+    "WebF": "dongtiangche@outlook.com"
+  },
+  "source": {
+    "path": "."
+  },
+  "source_files": "Classes/**/*",
+  "public_header_files": "Classes/**/*.h",
+  "dependencies": {
+    "FlutterMacOS": [
+
+    ]
+  },
+  "vendored_libraries": [
+    "libwebf.dylib",
+    "libquickjs.dylib"
+  ],
+  "prepare_command": "bash prepare.sh",
+  "platforms": {
+    "osx": "10.11"
+  },
+  "pod_target_xcconfig": {
+    "DEFINES_MODULE": "YES"
+  },
+  "swift_versions": "5.0",
+  "swift_version": "5.0"
+}
